@@ -9,7 +9,7 @@
     "build": "webpack --mode=development",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "debugthis": "node --inspect --inspect-brk ./webpack.config.js",
-    "dev": "npm run webpack  -- --env.mode=development", 
+    "dev": "npm run webpack  -- --env.mode=development --watch", 
     "dev:bug": "npm run debug -- --env.mode=development",
     "dev:this": "npm run debugthis -- --env.mode=development "
   },
