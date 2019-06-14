@@ -1,7 +1,7 @@
-module.exports = env => {
+module.exports = (env) => {
   return {
     entry: ["./src/main.js"],
-    model:env.model,
+    mode:env.mode,
     output: {
       filename: "bundle.js"
     },
