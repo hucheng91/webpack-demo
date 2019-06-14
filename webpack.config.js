@@ -1,14 +1,12 @@
 module.exports = env => {
-    console.log(env);
-    return {
-        entry: ['./src/main.js'],
-        mode: env.mode,
-        output: {
-          filename: 'bundle.js'
-        },
-        devServer: {
-            compress: true
-          }
+  return {
+    entry: ["./src/main.js"],
+    model:env.model,
+    output: {
+      filename: "bundle.js"
+    },
+    devServer: {
+      compress: true
     }
-   
   };
+};
