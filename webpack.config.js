@@ -16,7 +16,18 @@ module.exports = env => {
       mode: env.mode,
       module: {
         rules: [
-          { test: /\.css$/, use: 'css-loader' }
+          { test: /\.css$/, use: 'css-loader' },
+          {
+            test: /\.jpeg$/,
+            use: [
+              {
+                loader: "url-loader",
+                options: {
+                  limit: 5000
+                }
+              }
+            ]
+          }
         ]
       },
       devServer: {

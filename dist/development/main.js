@@ -122,6 +122,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n *\r\n * @param {HTMLE
 
 /***/ }),
 
+/***/ "./src/icon.jpeg":
+/*!***********************!*\
+  !*** ./src/icon.jpeg ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"6a4054541db6606e000c7cc9054e34b2.jpeg\";\n\n//# sourceURL=webpack:///./src/icon.jpeg?");
+
+/***/ }),
+
 /***/ "./src/index.css":
 /*!***********************!*\
   !*** ./src/index.css ***!
@@ -141,7 +152,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _colorElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./colorElement */ \"./src/colorElement.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\nconst div = document.createElement(\"div\");\r\ndiv.innerText = \"Hello World\";\r\ndiv.style.color = \"red\";\r\n\r\nconst button = Object(_button__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"HEY FIRST BUTTON YO!\");\r\n\r\nbutton.addEventListener(\"click\", e => {\r\n  Object(_colorElement__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(div, \"cyan\");\r\n});\r\n\r\ndocument.body.appendChild(button);\r\ndocument.body.appendChild(div);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _colorElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./colorElement */ \"./src/colorElement.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon.jpeg */ \"./src/icon.jpeg\");\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_jpeg__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nconst img =document.createElement(\"img\");\r\nimg.src = _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a;\r\n\r\nconst div = document.createElement(\"div\");\r\ndiv.innerText = \"Hello World\";\r\ndiv.style.color = \"red\";\r\n\r\nconst button = Object(_button__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"HEY FIRST BUTTON YO!\");\r\n\r\nbutton.addEventListener(\"click\", e => {\r\n  Object(_colorElement__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(div, \"cyan\");\r\n});\r\n\r\ndocument.body.appendChild(button);\r\ndocument.body.appendChild(div);\r\ndocument.body.appendChild(img);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
