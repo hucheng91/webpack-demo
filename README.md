@@ -1,1 +1,4 @@
-# weback 学习
+
+# Webpack merge
+
+const webpackMerge = require("webpack-merge"); 

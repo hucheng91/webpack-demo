@@ -1,6 +1,6 @@
 import createButton from "./button";
 import colorElement from "./colorElement";
-
+import './index.css';
 const div = document.createElement("div");
 div.innerText = "Hello World";
 div.style.color = "red";
