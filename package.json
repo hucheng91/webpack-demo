@@ -9,15 +9,17 @@
     "build": "webpack --mode=development",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "debugthis": "node --inspect --inspect-brk ./webpack.config.js",
-    "dev": "npm run webpack  -- --env.mode=development --watch", 
+    "dev": "npm run webpack  -- --env.mode=development --watch",
     "dev:bug": "npm run debug -- --env.mode=development",
     "dev:this": "npm run debugthis -- --env.mode=development "
   },
   "devDependencies": {
+    "css-loader": "^3.0.0",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.2.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
