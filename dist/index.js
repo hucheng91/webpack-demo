@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,28 +94,6 @@
 /***/ (function(module, exports) {
 
 eval("console.log('index')\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("console.log(\"main\");\n\n//# sourceURL=webpack:///./src/main.js?");
-
-/***/ }),
-
-/***/ 0:
-/*!******************************************!*\
-  !*** multi ./src/main.js ./src/index.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ./src/main.js */\"./src/main.js\");\nmodule.exports = __webpack_require__(/*! ./src/index.js */\"./src/index.js\");\n\n\n//# sourceURL=webpack:///multi_./src/main.js_./src/index.js?");
 
 /***/ })
 
