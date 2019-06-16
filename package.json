@@ -13,7 +13,8 @@
     "dev:debugthis": "npm run debugthis -- --env.mode=development ",
     "build": "npm run build:dev && npm run  build:prod",
     "build:dev": "npm run  webpack -- --env.mode development",
-    "build:prod": "npm run  webpack -- --env.mode production"
+    "build:prod": "npm run  webpack -- --env.mode production",
+    "prod:analyze": "npm run build:prod -- --env.presets analyze"
   },
   "devDependencies": {
     "css-loader": "^3.0.0",

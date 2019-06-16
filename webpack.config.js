@@ -3,17 +3,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // merge webpack config like Object.assign(a,b)
 const webpackMerge = require("webpack-merge"); 
 
+const loadPresets = require("./build/loadPresets");
 const modeConfig = env => require(`./build/webpack.${env.mode}.js`)(env);
 console.log('tag', modeConfig)
-module.exports = env => {
-  console.log(env);
-
+module.exports = ({mode ="production",presets = []}) => {
   return webpackMerge(
     {
       entry: {
         main: "./src/index.js",
       },
-      mode: env.mode,
+      mode: mode,
       module: {
         rules: [
           { test: /\.css$/, use: 'css-loader' },
@@ -35,6 +34,7 @@ module.exports = env => {
       },
       plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
     },
-    modeConfig(env)
+    modeConfig({ mode, presets }),
+    loadPresets({ mode, presets })
   );
 };
