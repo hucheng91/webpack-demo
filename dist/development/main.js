@@ -106,7 +106,7 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n *\r\n * @param {string} buttonInnertext\r\n */\r\nconst createButton = buttonInnertext => {\r\n  const button = document.createElement(\"button\");\r\n  button.innerText = buttonInnertext;\r\n\r\n  return button;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (createButton);\r\n\n\n//# sourceURL=webpack:///./src/button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\n *\n * @param {string} buttonInnertext\n */\nconst createButton = buttonInnertext => {\n  const button = document.createElement(\"button\");\n  button.innerText = buttonInnertext;\n\n  return button;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (createButton);\n\n\n//# sourceURL=webpack:///./src/button.js?");
 
 /***/ }),
 
@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n *\r\n * @param {strin
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/**\r\n *\r\n * @param {HTMLElement} el\r\n * @param {string} colorString\r\n */\r\nconst colorElement = (el, colorString) => {\r\n  el.style.color = colorString;\r\n  return el;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (colorElement);\r\n\n\n//# sourceURL=webpack:///./src/colorElement.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\n *\n * @param {HTMLElement} el\n * @param {string} colorString\n */\nconst colorElement = (el, colorString) => {\n  el.style.color = colorString;\n  return el;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (colorElement);\n\n\n//# sourceURL=webpack:///./src/colorElement.js?");
 
 /***/ }),
 
@@ -140,7 +140,7 @@ eval("module.exports = __webpack_require__.p + \"6a4054541db6606e000c7cc9054e34b
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\r\\n    color: blue\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.css?");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\n    color: blue\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/index.css?");
 
 /***/ }),
 
@@ -152,7 +152,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loa
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _colorElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./colorElement */ \"./src/colorElement.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon.jpeg */ \"./src/icon.jpeg\");\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_jpeg__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\r\nconst img =document.createElement(\"img\");\r\nimg.src = _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a;\r\n\r\nconst div = document.createElement(\"div\");\r\ndiv.innerText = \"Hello World\";\r\ndiv.style.color = \"red\";\r\n\r\nconst button = Object(_button__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"HEY FIRST BUTTON YO!\");\r\n\r\nbutton.addEventListener(\"click\", e => {\r\n  Object(_colorElement__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(div, \"cyan\");\r\n});\r\n\r\ndocument.body.appendChild(button);\r\ndocument.body.appendChild(div);\r\ndocument.body.appendChild(img);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button */ \"./src/button.js\");\n/* harmony import */ var _colorElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./colorElement */ \"./src/colorElement.js\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon.jpeg */ \"./src/icon.jpeg\");\n/* harmony import */ var _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_jpeg__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\nconst img =document.createElement(\"img\");\nimg.src = _icon_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a;\n\nconst div = document.createElement(\"div\");\ndiv.innerText = \"Hello World\";\ndiv.style.color = \"red\";\n\nconst button = Object(_button__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"HEY FIRST BUTTON YO!\");\n\nbutton.addEventListener(\"click\", e => {\n  Object(_colorElement__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(div, \"cyan\");\n});\n\ndocument.body.appendChild(button);\ndocument.body.appendChild(div);\ndocument.body.appendChild(img);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js  --env.mode development",
     "debugthis": "node --inspect --inspect-brk ./webpack.config.js",
     "dev": "webpack-dev-server  --env.mode=development --hot",
     "dev:bug": "npm run debug -- --env.mode=development",
