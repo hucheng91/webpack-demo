@@ -1,7 +1,8 @@
 import createButton from "./button";
-import colorElement from "./colorElement";
+// import colorElement from "./colorElement";
 import './index.css';
 import url from "./icon.jpeg";
+const getColorElement = () => import("./colorElement");
 
 const img =document.createElement("img");
 img.src = url;
@@ -13,7 +14,10 @@ div.style.color = "red";
 const button = createButton("HEY FIRST BUTTON YO!");
 
 button.addEventListener("click", e => {
-  colorElement(div, "cyan");
+  getColorElement().then(m => {
+    let colorElement = m.default;
+    colorElement(div, "cyan");
+  });
 });
 
 document.body.appendChild(button);
