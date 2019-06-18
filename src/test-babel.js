@@ -7,7 +7,6 @@ class UserInfo{
     }
   }
   new UserInfo().sayHi();
-
   const obj = {
     foo: {
       bar: {
@@ -17,6 +16,7 @@ class UserInfo{
       },
     },
   };
-
+  
 const baz = obj?.foo?.bar?.baz(); // 42
-console.log(baz);
+alert(baz);
+  
