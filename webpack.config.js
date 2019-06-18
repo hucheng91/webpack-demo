@@ -33,7 +33,7 @@ module.exports = ({mode ="production",presets = []}) => {
         compress: true
       },
       output: {
-        chunkFilename: "[id].[name].lazy.js"
+        chunkFilename: "[id].[name].[chunkhash].js"
       },
       plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
     },
