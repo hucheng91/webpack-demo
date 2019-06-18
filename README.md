@@ -1,6 +1,7 @@
 # weback 学习
 这个仓库 是在frontendmasters.com 上看 肖恩讲的 webpack 学习记录
 
+you can choose branch to see code learn it
 
 ## webpack  core
 
