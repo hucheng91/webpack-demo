@@ -10,7 +10,8 @@ module.exports = ({mode ="production",presets = []}) => {
   return webpackMerge(
     {
       entry: {
-        main: "./src/index.js",
+        main: "./src/index.js"
+
       },
       mode: mode,
       module: {

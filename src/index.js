@@ -2,6 +2,7 @@ import createButton from "./button";
 // import colorElement from "./colorElement";
 import './index.css';
 import url from "./icon.jpeg";
+import _ from 'lodash';
 const getColorElement = () => import("./colorElement");
 
 const img =document.createElement("img");
@@ -23,3 +24,7 @@ button.addEventListener("click", e => {
 document.body.appendChild(button);
 document.body.appendChild(div);
 document.body.appendChild(img);
+
+console.log(
+  _.join(['Another', 'module', 'loaded!'], ' ')
+);
