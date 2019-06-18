@@ -16,7 +16,6 @@ module.exports = ({mode ="production",presets = []}) => {
       mode: mode,
       module: {
         rules: [
-          { test: /\.css$/, use: 'css-loader' },
           {
             test: /\.jpeg$/,
             use: [
