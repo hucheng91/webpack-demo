@@ -1,1 +1,1 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{3:function(n,o,c){"use strict";c.r(o),c.d(o,"color",function(){return e});const e="green"}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{4:function(n,o,r){"use strict";r.r(o),r.d(o,"color",function(){return c});var c="green"}}]);
