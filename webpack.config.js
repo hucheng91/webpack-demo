@@ -32,6 +32,9 @@ module.exports = ({mode ="production",presets = []}) => {
       devServer: {
         compress: true
       },
+      output: {
+        chunkFilename: "[id].[name].lazy.js"
+      },
       plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
     },
     modeConfig({ mode, presets }),
