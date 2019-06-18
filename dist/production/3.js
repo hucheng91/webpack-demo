@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{5:function(n,o,c){"use strict";c.r(o),c.d(o,"color",function(){return r});const r="red"}}]);
