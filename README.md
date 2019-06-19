@@ -20,6 +20,11 @@ you can choose branch to see code learn it
  * [14-css-extract](https://github.com/hucheng91/webpack-demo/tree/webpackbase-14-css-extract)
  * [15-chunkname](https://github.com/hucheng91/webpack-demo/tree/webpackbase-15-chunkname)
  * [16-babel-preset](https://github.com/hucheng91/webpack-demo/tree/webpackbase-16-babel-preset)
+ * [17-chunkhash](https://github.com/hucheng91/webpack-demo/tree/webpackbase-17-chunkhash)
+ * [18-resolve](https://github.com/hucheng91/webpack-demo/tree/webpackbase-18-resolve)
+ * [19-typescript](https://github.com/hucheng91/webpack-demo/tree/webpack-base-19-typescript)
+ * [20-scss](https://github.com/hucheng91/webpack-demo/tree/webpackbase-20-scss)
+ * [17-chunkhash](https://github.com/hucheng91/webpack-demo/tree/webpackbase-17-chunkhash)
  
 
  ## webpack  plugin
