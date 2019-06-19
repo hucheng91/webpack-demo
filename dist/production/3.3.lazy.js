@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{5:function(o){o.exports={color:"pink"}}}]);
