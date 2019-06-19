@@ -12,6 +12,9 @@ module.exports = (env) => ({
           'vue-style-loader',
           'css-loader'
         ]
+      },{
+        test: /\.svg$/,
+        use: ['svg-inline-loader']
       }
     ]
   },

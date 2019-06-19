@@ -10,7 +10,7 @@ const getColorElement = () => import("./colorElement");
 const setButtonColor = colorName => import(`./button-colors/${colorName}`);
 
 import {initVue} from './vue/main';
-
+import svgContent from './svgs/alert.svg';
 const img = document.createElement("img");
 img.src = url;
 
@@ -35,11 +35,16 @@ button1.addEventListener("click", e => {
 
 const vueDiv = document.createElement("div");
 vueDiv.id = "app";
+
+const svgDiv = document.createElement("div");
+svgDiv.className ="svg-contaner"
+svgDiv.innerHTML = svgContent;
 document.body.appendChild(button);
 document.body.appendChild(div);
 document.body.appendChild(img);
 document.body.appendChild(button1);
 document.body.appendChild(vueDiv);
+document.body.appendChild(svgDiv);
 console.log(
   _.join(['Another', 'module', 'loaded!'], ' ')
 );
