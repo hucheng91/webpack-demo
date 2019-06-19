@@ -16,7 +16,8 @@
     "build:prod": "npm run  webpack -- --env.mode production",
     "prod:analyze": "npm run build:prod -- --env.presets analyze",
     "prod:compress": "npm run build:prod -- --env.presets compress",
-    "prod:babel": "npm run build:prod -- --env.presets babel"
+    "prod:babel": "npm run build:prod -- --env.presets babel",
+    "dev:babel": "npm run dev -- --env.presets babel"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -32,6 +33,7 @@
     "html-webpack-plugin": "^3.2.0",
     "lodash": "^4.17.11",
     "mini-css-extract-plugin": "^0.7.0",
+    "style-loader": "^0.23.1",
     "url-loader": "^2.0.0",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",

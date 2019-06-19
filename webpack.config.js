@@ -14,6 +14,11 @@ module.exports = ({mode ="production",presets = []}) => {
 
       },
       mode: mode,
+      resolve:{
+        alias:{
+          myAxios: './utils/MyAxios'
+        }
+      },
       module: {
         rules: [
           {

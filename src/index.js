@@ -4,6 +4,7 @@ import './index.css';
 import url from "./icon.jpeg";
 import _ from 'lodash';
 import './test-babel';
+import './test-resolve'
 const getColorElement = () => import("./colorElement");
 const setButtonColor = colorName => import(`./button-colors/${colorName}`);
 
