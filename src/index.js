@@ -1,6 +1,6 @@
 import createButton from "./button";
 // import colorElement from "./colorElement";
-import './index.css';
+import './index.scss';
 import url from "./icon.jpeg";
 import _ from 'lodash';
 import './test-babel';
