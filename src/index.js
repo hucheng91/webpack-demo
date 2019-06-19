@@ -5,6 +5,7 @@ import url from "./icon.jpeg";
 import _ from 'lodash';
 import './test-babel';
 import './test-resolve'
+import {sayHi} from './ts/index';
 const getColorElement = () => import("./colorElement");
 const setButtonColor = colorName => import(`./button-colors/${colorName}`);
 
@@ -36,4 +37,4 @@ document.body.appendChild(button1);
 console.log(
   _.join(['Another', 'module', 'loaded!'], ' ')
 );
-
+sayHi("TypeScript");

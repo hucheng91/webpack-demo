@@ -17,13 +17,15 @@ module.exports = ({mode ="production",presets = []}) => {
       resolve:{
         alias:{
           myAxios: './utils/MyAxios'
-        }
+        },
+        extensions: [".ts",".js"]
       },
       module: {
         rules: [
           {
             test: /\.jpeg$/,
             use: [
+              
               {
                 loader: "url-loader",
                 options: {
@@ -31,7 +33,12 @@ module.exports = ({mode ="production",presets = []}) => {
                 }
               }
             ]
-          }
+          },
+          {
+            test: /\.ts$/,
+            use: 'ts-loader',
+            exclude: /node_modules/
+          },
         ]
       },
       devServer: {
