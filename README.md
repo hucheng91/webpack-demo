@@ -24,7 +24,8 @@ you can choose branch to see code learn it
  * [18-resolve](https://github.com/hucheng91/webpack-demo/tree/webpackbase-18-resolve)
  * [19-typescript](https://github.com/hucheng91/webpack-demo/tree/webpack-base-19-typescript)
  * [20-scss](https://github.com/hucheng91/webpack-demo/tree/webpackbase-20-scss)
- * [17-chunkhash](https://github.com/hucheng91/webpack-demo/tree/webpackbase-17-chunkhash)
+ * [21-vue](https://github.com/hucheng91/webpack-demo/tree/webpack-base-21-vue)
+ * [22-svg](https://github.com/hucheng91/webpack-demo/tree/webpackbase-22-svg)
  
 
  ## webpack  plugin
