@@ -5,11 +5,13 @@ import url from "./icon.jpeg";
 import _ from 'lodash';
 import './test-babel';
 import './test-resolve'
-import {sayHi} from './ts/index';
+import { sayHi } from './ts/index';
 const getColorElement = () => import("./colorElement");
 const setButtonColor = colorName => import(`./button-colors/${colorName}`);
 
-const img =document.createElement("img");
+import {initVue} from './vue/main';
+
+const img = document.createElement("img");
 img.src = url;
 
 const div = document.createElement("div");
@@ -30,11 +32,16 @@ button1.addEventListener("click", e => {
     button1.style.color = color;
   });
 });
+
+const vueDiv = document.createElement("div");
+vueDiv.id = "app";
 document.body.appendChild(button);
 document.body.appendChild(div);
 document.body.appendChild(img);
 document.body.appendChild(button1);
+document.body.appendChild(vueDiv);
 console.log(
   _.join(['Another', 'module', 'loaded!'], ' ')
 );
 sayHi("TypeScript");
+initVue();

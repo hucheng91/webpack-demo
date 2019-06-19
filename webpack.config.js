@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // merge webpack config like Object.assign(a,b)
 const webpackMerge = require("webpack-merge"); 
 
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const loadPresets = require("./build/loadPresets");
 const modeConfig = env => require(`./build/webpack.${env.mode}.js`)(env);
 console.log('tag', modeConfig)
@@ -39,6 +40,10 @@ module.exports = ({mode ="production",presets = []}) => {
             use: 'ts-loader',
             exclude: /node_modules/
           },
+          {
+            test: /\.vue$/,
+            use: ['vue-loader'],
+          },
         ]
       },
       devServer: {
@@ -47,7 +52,7 @@ module.exports = ({mode ="production",presets = []}) => {
       output: {
         chunkFilename: "[id].[name].[chunkhash].js"
       },
-      plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()]
+      plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin(),new VueLoaderPlugin()]
     },
     modeConfig({ mode, presets }),
     loadPresets({ mode, presets })

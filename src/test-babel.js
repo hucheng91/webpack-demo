@@ -18,5 +18,5 @@ class UserInfo{
   };
   
 const baz = obj?.foo?.bar?.baz(); // 42
-alert(baz);
+console.log(baz);
   
